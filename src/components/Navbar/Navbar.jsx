@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
   const links = (
     <>
-      <nav className="flex space-x-4">
+      <nav className="flex space-x-4 font-semibold items-center text-xl">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/appliedJobs">Applied Jobs</NavLink>
         <NavLink to="/blogs">Blogs</NavLink>
@@ -13,7 +13,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-[#7E90FE] bg-opacity-5 ">
+    <div className="navbar bg-[#7E90FE] bg-opacity-5 lg:px-10 py-6">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         <Link to="/">
           <a className="text-lg font-bold text-[#9873FF] lg:text-4xl">
-            Career HUB
+            CareerHUB
           </a>
         </Link>
       </div>
@@ -49,8 +49,8 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border border-[#9873FF] uppercase hover:bg-none">
-          Start Applying
+        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[#d5c8ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none">
+          Apply Now
         </button>
       </div>
     </div>

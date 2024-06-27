@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="flex items-center bg-[#7E90FE] bg-opacity-0">
+    <div className="flex items-center bg-[#7E90FE] bg-opacity-0 mx-auto lg:px-10">
       <div className="ml-5">
         <h1 className="text-2xl font-bold mb-5 lg:text-4xl">
           One Step <br /> Closer To Your <br />
@@ -13,7 +13,7 @@ const Banner = () => {
             job application from start to finish.
           </small>
         </p>
-        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border border-[#9873FF] uppercase  hover:bg-none duration-700">
+        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none duration-700 text-[#d5c8ff]">
           Get Started
         </button>
       </div>

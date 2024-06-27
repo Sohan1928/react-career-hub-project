@@ -4,9 +4,11 @@ import Navbar from "../Navbar/Navbar";
 
 const Root = () => {
   return (
-    <div className="max-w-6xl mx-auto my-6">
+    <div className="">
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="mx-auto">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );
