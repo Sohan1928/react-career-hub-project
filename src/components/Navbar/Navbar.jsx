@@ -49,7 +49,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[#d5c8ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none">
+        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-[#d5c8ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none cursor-not-allowed">
           Apply Now
         </button>
       </div>

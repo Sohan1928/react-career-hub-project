@@ -13,7 +13,7 @@ const Banner = () => {
             job application from start to finish.
           </small>
         </p>
-        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none duration-700 text-[#d5c8ff]">
+        <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none duration-700 text-[#d5c8ff] cursor-not-allowed">
           Get Started
         </button>
       </div>

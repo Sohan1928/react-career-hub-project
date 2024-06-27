@@ -20,7 +20,7 @@ const JobDetails = () => {
       </div>
 
       <div className="grid md:grid-cols-4 gap-5 my-14 max-w-6xl mx-auto">
-        <div className="md:col-span-3 border p-4">
+        <div className="md:col-span-3 p-4">
           <h2 className="pb-8">
             <span className="text-xl font-bold">Job Description</span>:
             <span className="opacity-70"> {job.job_description}</span>
@@ -42,7 +42,7 @@ const JobDetails = () => {
           </h2>
         </div>
 
-        <div className="mx-2 lg:mx-0 bg-[#ede3ff] shadow-lg shadow-[#be9aff] rounded-md">
+        <div className="mx-2 lg:mx-0 bg-[#ede8f5] shadow-lg shadow-[#be9aff] rounded-md hover:shadow-[#894eff]">
           <div>
             <h3 className="px-3 py-6 text-xl font-bold">Job Details</h3>
             <hr className="h-px bg-[#b6b1bf] border-0 mx-auto w-60"></hr>
@@ -111,7 +111,7 @@ const JobDetails = () => {
             </div>
           </div>
           <div className="mx-auto text-center">
-            <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#6075ff] to-[#9873FF] text-[#bda9ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none">
+            <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#8393ff] to-[#926bff] text-[#bda9ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none">
               Apply Now
             </button>
           </div>
