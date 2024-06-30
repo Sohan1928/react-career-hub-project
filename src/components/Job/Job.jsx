@@ -31,7 +31,7 @@ const Job = ({ job }) => {
           {job_type}
         </button>
       </div>
-      <div className="space-y-2 lg:flex items-center gap-8">
+      <div className=" lg:flex items-center gap-8 my-2">
         <h2 className="flex items-center">
           <MdOutlineLocationOn className="text-xl mr-2"></MdOutlineLocationOn>
           {location}

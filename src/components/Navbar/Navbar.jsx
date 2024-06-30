@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="flex space-x-4 font-semibold items-center text-xl">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/appliedJobs">Applied Jobs</NavLink>
-        <NavLink to="/blogs">Blogs</NavLink>
+        <NavLink to="/jobDetails">Job Details</NavLink>
       </nav>
     </>
   );

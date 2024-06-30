@@ -1,9 +1,5 @@
 const Blogs = () => {
-  return (
-    <div>
-      <h1>this is blogs site</h1>
-    </div>
-  );
+  return <div className=""></div>;
 };
 
 export default Blogs;

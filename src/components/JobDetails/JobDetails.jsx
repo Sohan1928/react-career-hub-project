@@ -1,9 +1,12 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
 import { PiSubtitles } from "react-icons/pi";
 import { FiPhone } from "react-icons/fi";
 import { GoMail } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { saveJobApplication } from "../../utility/localstorage";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -11,6 +14,20 @@ const JobDetails = () => {
   const idInt = parseInt(id);
   const job = jobs.find((job) => job.id === idInt);
   console.log(job);
+
+  const handleJobApply = () => {
+    saveJobApplication(idInt);
+    toast.success("You have applied successfully", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
 
   return (
     <div className="mb-20">
@@ -110,13 +127,30 @@ const JobDetails = () => {
               </h2>
             </div>
           </div>
-          <div className="mx-auto text-center">
-            <button className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#8393ff] to-[#926bff] text-[#bda9ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none">
-              Apply Now
-            </button>
+          <div className="mx-auto text-center mb-5">
+            <Link to={"/appliedJobs"}>
+              <button
+                onClick={handleJobApply}
+                className="py-2 px-3 rounded-lg font-semibold  bg-gradient-to-r from-[#8393ff] to-[#926bff] text-[#bda9ff] border border-[#9873FF] uppercase shadow-md shadow-[#9873FF] hover:bg-none"
+              >
+                Apply Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 };
